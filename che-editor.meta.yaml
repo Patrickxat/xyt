@@ -4,9 +4,9 @@ editors:
     title: Eclipse Theia development version.
     displayName: theia-ide
     description: Eclipse Theia, get the latest release each day.
-    icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
+    icon:  https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
     repository: https://github.com/eclipse-che/che-theia
-    firstPublicationDate: "2021-01-01"
+    firstPublicationDate: "2021-03-19"
     endpoints:
       - name: "theia"
         public: true

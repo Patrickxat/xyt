@@ -19,7 +19,7 @@ editors:
           discoverable: false
     containers:
       - name: theia-ide
-        image: "<your-ide-image>"
+        image: "quay.io/eclipse/che-theia:next-1"
         mountSources: true
         ports:
           - exposedPort: 3100

@@ -1,26 +1,30 @@
-version: 1.0.0
-editors:
-  - id: eclipse/che-theia/next
-    title: Eclipse Theia development version.
-    displayName: theia-ide
-    description: Eclipse Theia, get the latest release each day.
-    icon:  https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
-    repository: https://github.com/eclipse-che/che-theia
-    firstPublicationDate: "2021-03-19"
-    endpoints:
-      - name: "theia"
-        public: true
-        targetPort: 3100
-        attributes:
-          protocol: http
-          type: ide
-          secure: true
-          cookiesAuthEnabled: true
-          discoverable: false
-    containers:
-      - name: theia-ide
-        image: "quay.io/eclipse/che-theia:next-1"
-        mountSources: true
-        ports:
-          - exposedPort: 3100
-        memoryLimit: "512M"
+apiVersion: v2
+publisher: eclipse
+name: che-theia
+version: 7.27.2
+type: Che Editor
+displayName: theia-ide
+title: Eclipse Theia development version.
+description: Eclipse Theia, get the latest release each day.
+icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
+category: Editor
+repository: https://github.com/eclipse/che-theia
+firstPublicationDate: "2021-03-19"
+spec:
+  endpoints:
+   -  name: "theia"
+      public: true
+      targetPort: 3100
+      attributes:
+        protocol: http
+        type: ide
+        secure: true
+        cookiesAuthEnabled: true
+        discoverable: false
+  containers:
+   - name: theia-ide
+     image: "quay.io/eclipse/che-theia:next-1"
+     mountSources: true
+     ports:
+         - exposedPort: 3100
+     memoryLimit: "512M"

@@ -23,7 +23,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "quay.io/eclipse/che-theia:next-1"
+     image: "registry.cn-hangzhou.aliyuncs.com/xat/xyt-repo:v1"
      mountSources: true
      ports:
          - exposedPort: 3100
